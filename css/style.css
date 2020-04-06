@@ -33,7 +33,7 @@ body {
 /* Main Menu */
 .main-menu {
     display: grid;
-    background-color: #E0392D;
+    background-color: #ED1C24;
     grid-column: 1 / -1;
     grid-template-columns: repeat(12, 1fr);
     height: 95px;
@@ -86,12 +86,12 @@ ul.topnav-full a {
 }
 ul.topnav-full a {
     color: #fff;
-    background-color: #9C282C;
+    background-color: #7A1315;
 }
 
 /* Secondary Menu */
 .secondery-menu {
-    background-color: #77BFBC;
+    background-color: #6FC0C2;
     display: flex;
     grid-column: 1 / -1;
 }
