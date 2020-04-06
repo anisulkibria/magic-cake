@@ -145,12 +145,11 @@ ul.topnav-full a {
 }
 .sorting {
     color: #2C8480;
-    display: none;
     font-size: 24px;
     font-family: miso-bold;
-    margin-left: 260px;
-    padding: 35px 0 0;
-    text-align: left;
+    padding: 35px 330px 0 20px;
+    display: block;
+    text-align: center;
 }
 .sorting a {
     color: #2C8480;
@@ -243,8 +242,15 @@ ul.topnav-full a {
     .top-social {
         padding: 2px 20px 0;
     }
+    .sorting {
+        padding: 35px 150px 0 20px;
+    }
 }
-
+@media (max-width: 1024px) {
+    .sorting {
+        padding: 35px 110px 0 20px;
+    }
+}
 @media (max-width: 1023px) {
     .main-menu {
         height: 80px;
@@ -268,12 +274,14 @@ ul.topnav-full a {
     }
     ul.topnav a.arrow::after {
         font-size: 30px;
-        display: block;
         margin-left: 45px;
         margin-top: -15px;
     }
     .top-slide img {
         width: 70%;
+    }
+    .sorting {
+        padding: 35px 170px 0 20px;
     }
 }
 
@@ -293,6 +301,9 @@ ul.topnav-full a {
     }
     .top-slide img {
         width: 80%;
+    }
+    .sorting {
+        padding: 35px 150px 0 20px;
     }
 }
 @media (max-width: 767px) {
@@ -337,6 +348,11 @@ ul.topnav-full a {
     ul.topnav li a{
         padding: 20px 10px;
     }
+    ul.topnav a.arrow::after {
+        font-size: 24px;
+        margin-left: 35px;
+        margin-top: -10px;
+    }
     .secondery-menu .left-menu li a{
         font-size: 12px;
     }
@@ -356,6 +372,15 @@ ul.topnav-full a {
     .top-slide-mobile img {
         margin: 20px auto;
         width: 90%;
+    }
+    .sorting {
+        font-size: 16px;
+        padding: 10px 0 0 40px;
+        text-align: left;
+    }
+    .sort {
+        display: block;
+        text-align: left;
     }
 }
 @media (max-width: 400px){
