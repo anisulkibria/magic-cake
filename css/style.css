@@ -125,7 +125,6 @@ ul.topnav-full a {
 /* Main Content */
 .main-content {
     margin: 5px 0;
-    min-height: 1000px;
     background-color: #E4F2F2;
     background: url(../img/bg.png) repeat left top;
     -webkit-background-size: auto;
@@ -133,23 +132,30 @@ ul.topnav-full a {
     -o-background-size: auto;
     background-size: auto;
     grid-column: 1 / -1;
+}.content-header {
+    display: grid;
+    grid-template-columns: 2fr auto 2fr;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
 }
+
 .top-slide {
-    padding-top: 40px;
+    grid-area: b;
+    padding: 30px 0 20px;
 }
 .top-slide img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 62%;
+    margin: 0 auto;
 }
 .sorting {
+    grid-area: e;
     color: #2C8480;
     font-size: 24px;
     font-family: miso-bold;
-    padding: 35px 330px 0 20px;
+    padding: 20px 10px;
     display: block;
-    text-align: center;
 }
 .sorting a {
     color: #2C8480;
@@ -159,13 +165,14 @@ ul.topnav-full a {
     content: ' \005E';
 }
 .calendar {
+    grid-area: h;
     background-color: #fff;
     color: #2C8480;
-    display: none;
+    display: flex;
     font-size: 32px;
     font-family: miso-bold;
     height: 35px;
-    margin: 20px 260px;
+    margin: 20px 10px;
     padding: 8px 15px;
 }
 .calendar .icon-calendar {
@@ -242,13 +249,13 @@ ul.topnav-full a {
     .top-social {
         padding: 2px 20px 0;
     }
-    .sorting {
-        padding: 35px 150px 0 20px;
-    }
 }
 @media (max-width: 1024px) {
-    .sorting {
-        padding: 35px 110px 0 20px;
+    .calendar{
+        font-size: 22px;
+    }
+    .display-hamburgar{
+        font-size: 22px;
     }
 }
 @media (max-width: 1023px) {
@@ -278,10 +285,7 @@ ul.topnav-full a {
         margin-top: -15px;
     }
     .top-slide img {
-        width: 70%;
-    }
-    .sorting {
-        padding: 35px 170px 0 20px;
+        width: 98%;
     }
 }
 
@@ -298,12 +302,6 @@ ul.topnav-full a {
 @media (max-width: 820px) {
     ul.topnav li a, ul.topnav-full li a{
         font-size: 15px;
-    }
-    .top-slide img {
-        width: 80%;
-    }
-    .sorting {
-        padding: 35px 150px 0 20px;
     }
 }
 @media (max-width: 767px) {
@@ -368,19 +366,28 @@ ul.topnav-full a {
         } 
     .top-slide-mobile {
         display: flex;
+        grid-area: b;
+        padding: 30px 0 20px;
         }
     .top-slide-mobile img {
-        margin: 20px auto;
+        margin: 0 auto;
         width: 90%;
     }
     .sorting {
         font-size: 16px;
-        padding: 10px 0 0 40px;
+        padding: 0 0 0 30px;
         text-align: left;
     }
     .sort {
         display: block;
         text-align: left;
+    }
+    .calendar{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .display-hamburgar{
+        font-size: 16px;
     }
 }
 @media (max-width: 400px){
