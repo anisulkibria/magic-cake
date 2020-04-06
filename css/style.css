@@ -1,15 +1,15 @@
 /* Font Face */
 @font-face {
     font-family: miso;
-    src: url(fonts/miso.otf);
+    src: url(../fonts/miso.otf);
 }
 @font-face {
     font-family: miso-bold;
-    src: url(fonts/miso-bold.otf);
+    src: url(../fonts/miso-bold.otf);
 }
 @font-face {
     font-family: miso-light;
-    src: url(fonts/miso-light.otf);
+    src: url(../fonts/miso-light.otf);
 }
 
 /* Global */
