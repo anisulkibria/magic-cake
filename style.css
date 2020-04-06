@@ -1,0 +1,341 @@
+/* Font Face */
+@font-face {
+    font-family: miso;
+    src: url(fonts/miso.otf);
+}
+@font-face {
+    font-family: miso-bold;
+    src: url(fonts/miso-bold.otf);
+}
+@font-face {
+    font-family: miso-light;
+    src: url(fonts/miso-light.otf);
+}
+
+/* Global */
+body {
+    margin: 0;
+}
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    font-family: miso;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header */
+.header{
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: auto;
+}
+/* Main Menu */
+.main-menu {
+    display: grid;
+    background-color: #E0392D;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(12, 1fr);
+    height: 95px;
+}
+.logo {
+    grid-column: 1 / 4;
+    margin-left: 70px;
+}
+.logo img {
+    padding: 15px;
+    height: 62px;
+}
+ul.topnav{
+    grid-column: 4 / 10;
+    margin: 0 40px 0 auto;
+}
+ul.topnav,  ul.topnav-full{
+    display: flex;
+    font-family: miso-bold;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    float: left;
+}
+ul.topnav li a,  ul.topnav-full li a{
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 40px 15px;
+}
+ul.topnav a.arrow::after {
+    content: ' \005E';
+    color: #F1AB31;
+}
+ul.topnav-full{
+    grid-column: 10 / -1;
+    margin: 0 20px 0 auto;
+}
+ul.topnav-full a {
+    margin-right: 20px;
+}
+ul.topnav-full a {
+    color: #fff;
+    background-color: #9C282C;
+}
+
+/* Secondary Menu */
+.secondery-menu {
+    background-color: #77BFBC;
+    display: flex;
+    grid-column: 1 / -1;
+}
+.secondery-menu ul.left-menu {
+    list-style-type: none;
+    margin: 0 auto 0 60px;
+    padding: 5px 15px 5px;
+}
+.secondery-menu .left-menu li {
+    padding: 3px 10px;
+}
+.secondery-menu .left-menu li a {
+    color: #fff;
+    font-family: miso-bold;
+    font-size: 14px;
+    padding: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.top-social {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 2px 40px 0;
+}
+.top-social img {
+    height: 24px;
+    padding: 0 3px;
+}
+
+/* Main Content */
+.main-content {
+    display: none;
+    margin: 5px 0;
+    min-height: 1000px;
+    background-color: #E4F2F2;
+    background: url(img/bg.png) repeat left top;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    grid-column: 1 / -1;
+}
+.top-slide {
+    padding-top: 40px;
+}
+.top-slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62%;
+}
+.sorting {
+    color: #2C8480;
+    display: flex;
+    font-size: 24px;
+    font-family: miso-bold;
+    margin-left: 260px;
+    padding: 35px 0 0;
+    text-align: left;
+}
+.sorting a {
+    color: #2C8480;
+    text-decoration: none;
+}
+.sorting .arrow::after {
+    content: ' \005E';
+}
+.calendar {
+    background-color: #fff;
+    color: #2C8480;
+    display: flex;
+    font-size: 32px;
+    font-family: miso-bold;
+    height: 35px;
+    margin: 20px 260px;
+    padding: 8px 15px;
+}
+.calendar .icon-calendar {
+    float: left;
+}
+.date {
+    float: left;
+    text-transform: uppercase;
+    margin: 10px auto 10px 10px;
+}
+.display-hamburgar {
+    color: #5E5F61;
+    display: flex;
+    font-size: 24px;
+}
+.display {
+    padding: 10px;
+}
+
+
+/* Media Queries */
+@media (min-width: 1366px) { 
+    .main {
+        width: 1344px;
+    }
+}
+@media (max-width: 1365px) { 
+    ul.topnav{
+        margin: 0 10px 0 auto;
+    }
+    ul.topnav li a{
+        padding: 40px 10px;
+    }
+    ul.topnav-full li a{
+        padding: 40px 6px;
+    }
+    ul.topnav a.arrow {
+        margin-right: 15px;;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .main-menu {
+        height: 90px;
+    }
+    .logo {
+        grid-column: 1 / 3;
+        margin: 0 30px;
+    }
+    .logo img{
+        height: 55px;
+    }
+    ul.topnav{
+        grid-column: 3 / 9;
+        margin: 0 0 0 auto;
+    }
+    ul.topnav-full{
+        grid-column: 9 / -1;
+        margin: 0 0 0 auto;
+    }
+    ul.topnav li a, ul.topnav-full li a{
+        font-size: 20px;
+    }
+    ul.topnav a.arrow {
+        margin-right: 0;;
+    }
+    .secondery-menu ul.left-menu{
+        margin: 0 auto 0 25px;
+        padding: 5px 5px 5px;
+    }
+    .top-social {
+        padding: 2px 20px 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    .main-menu {
+        height: 80px;
+    }
+    .logo {
+        grid-column: 1 / 2;
+        margin: 0 0 0 20px;
+    }
+    .logo img{
+        height: 42px;
+    }
+    ul.topnav{
+        grid-column: 2 / 9;
+    }
+    ul.topnav-full{
+        grid-column: 9 / -1;
+        margin: 0 0 0 auto;
+    }
+    ul.topnav li a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    ul.topnav li a, ul.topnav-full li a{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    ul.topnav-full{
+        overflow: hidden;
+    }
+}
+@media (max-width: 800px) {
+    ul.topnav li a, ul.topnav-full li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .main-content {
+        display: none;
+    }
+    .logo {
+        grid-area: 1 / 1 / 1 / 1;
+        margin: 0 0 0 5px;
+    }
+    .logo img{
+        height: 38px;
+    }
+    .main-menu {
+        grid-template-columns: auto;
+        height: auto;
+    }
+    ul.topnav{
+        grid-area: 3 / 1 / 3 / 6;
+        margin: 0 auto;
+    }
+    ul.topnav li a, ul.topnav-full li a{
+        font-size: 16px;
+    }
+    ul.topnav-full li a {
+        padding: 55px 5px 15px 5px;
+    }
+    ul.topnav-full{
+        grid-area: 2 / 2 / 2 / 6;
+        margin: 0 0 0 auto;
+    }
+    ul.topnav-full li a{
+        margin: -100px 3px;
+    }
+    .secondery-menu .left-menu li{
+        padding: 3px 5px;
+    }
+    .secondery-menu ul.left-menu {
+        margin: 0 auto;
+        padding: 3px;
+    }
+    ul.topnav li a{
+        padding: 20px 10px;
+    }
+    .secondery-menu .left-menu li a{
+        font-size: 12px;
+    }
+    .top-social {
+        margin: 0 auto;
+        padding: 2px;
+    }
+    .top-social img {
+        height: 18px;
+    }
+}
+@media (max-width: 400px){
+    .main {
+        min-width: 350px;
+    }
+    .secondery-menu .left-menu li a{
+        font-size: 10px;
+    }
+}
