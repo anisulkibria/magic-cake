@@ -243,9 +243,15 @@ ul.topnav-full a {
 
 .footer{
     background-color: #6FC0C2;
-    color: #fff;
-    min-height: 50px;
-    text-align: center;
+    display: grid;
+}
+.footer .logo {
+    padding: 20px 0;
+    max-width: 200px;
+}
+.palette {
+    background-image: url(../img/palette.png);
+    height: 22px;
 }
 
 
