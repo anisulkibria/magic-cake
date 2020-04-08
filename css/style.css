@@ -230,6 +230,17 @@ ul.topnav-full a {
     width: 100%;
 }
 
+.double{
+    display: flex;
+}
+.half {
+    width: 50%;
+    padding: 0 5px 0 0;
+}
+#checkin {
+    width: 80px;
+}
+
 .footer{
     background-color: #6FC0C2;
     color: #fff;
