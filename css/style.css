@@ -124,7 +124,7 @@ ul.topnav-full a {
 
 /* Main Content */
 .content-wrapper {
-    margin: 5px 0;
+    margin: 5px 0 0;
     background-color: #E4F2F2;
     background: url(../img/bg.png) repeat left top;
     -webkit-background-size: auto;
@@ -135,7 +135,7 @@ ul.topnav-full a {
 }
 .content-header {
     display: grid;
-    grid-template-columns: 3fr auto 2fr;
+    grid-template-columns: 2fr auto 2fr;
     grid-template-areas: 
     "a b c"
     "d e f"
@@ -148,7 +148,7 @@ ul.topnav-full a {
 }
 .top-slide img {
     display: block;
-    max-width: 850px;
+    max-width: 750px;
     margin: 0 auto;
 }
 .sorting {
@@ -251,6 +251,11 @@ ul.topnav-full a {
     padding: 10px 0;
     max-width: 200px;
 }
+.footer .logo img {
+    height: auto;
+    max-height: 50px;
+    max-width: 200px;
+}
 ul.footer-nav{
     grid-column: 4 / 10;
     margin: 0 0 0 auto;
@@ -260,6 +265,9 @@ ul.footer-nav{
     list-style-type: none;
     padding: 0;
 }
+ul.footer-nav li{
+    margin: 0 auto;
+}
 ul.footer-nav li a{
     display: block;
     color: white;
@@ -267,19 +275,19 @@ ul.footer-nav li a{
     text-decoration: none;
     color: #333;
     font-size: 14px;
-    padding: 55px 5px;
+    padding: 50px 5px;
 }
 ul.footer-nav img {
-    margin-top: -5px;
+    margin-top: -10px;
     padding: 0 5px 0 0;
     float: left;
-    width: 22px;
+    width: 28px;
 }
 .footer-social {
     grid-column: 10 / 12;
     float: right;
     list-style-type: none;
-    padding: 25px 0 0 30px;
+    padding: 20px 0 0 30px;
 }
 .footer-social img {
     height: 30px;
@@ -316,6 +324,23 @@ ul.footer-nav img {
     }
 }
 
+@media (max-width: 1300px) {
+    .footer{
+        display: block;
+    }
+    ul.footer-nav {
+        display: flex;
+    }
+    ul.footer-nav li a {
+        padding: 10px 35px 10px 15px;
+    }
+    .footer-social {
+        padding: 20px 20px 0 30px;
+    }
+    .footer-social img.convida-logo {
+        clear: both;
+    }
+}
 @media (max-width: 1200px) { 
     .main-menu {
         height: 90px;
@@ -394,6 +419,9 @@ ul.footer-nav img {
 @media (max-width: 900px) {
     ul.topnav li a, ul.topnav-full li a{
         font-size: 18px;
+    }
+    ul.footer-nav {
+        display: inline-block;
     }
 }
 @media (min-width: 768px) {
@@ -490,6 +518,12 @@ ul.footer-nav img {
     }
     .display-hamburgar{
         font-size: 16px;
+    }
+    .footer .logo {
+        margin: 0 auto;
+    }
+    ul.footer-nav li:nth-child(1), ul.footer-nav li:nth-child(4){
+        width: 100%;
     }
 }
 @media (max-width: 400px){
