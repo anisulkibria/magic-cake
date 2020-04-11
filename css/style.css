@@ -43,12 +43,12 @@ body {
     margin-left: 70px;
 }
 .logo img {
-    padding: 15px;
+    padding: 15px 20px;
     height: 62px;
 }
 ul.topnav{
     grid-column: 4 / 10;
-    margin: 0 40px 0 auto;
+    margin: 0 50px 0 auto;
 }
 ul.topnav,  ul.topnav-full{
     display: flex;
@@ -60,26 +60,27 @@ ul.topnav,  ul.topnav-full{
 ul li {
     float: left;
 }
-ul.topnav li a,  ul.topnav-full li a{
+ul.topnav li a, ul.topnav-full li a{
     display: block;
     color: white;
     padding: 16px;
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
-    padding: 40px 15px;
+    font-size: 25px;
+    padding: 43px 15px;
 }
 ul.topnav a.arrow::after {
     content: ' \005E';
     color: #F1AB31;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: miso;
     display: block;
     margin-left: 55px;
     margin-top: -20px;
 }
 ul.topnav-full{
     grid-column: 10 / -1;
-    margin: 0 20px 0 auto;
+    margin: 0 25px 0 auto;
 }
 ul.topnav-full a {
     margin-right: 20px;
@@ -94,6 +95,7 @@ ul.topnav-full a {
     background-color: #6FC0C2;
     display: flex;
     grid-column: 1 / -1;
+    padding: 2px 0;
 }
 .secondery-menu ul.left-menu {
     list-style-type: none;
@@ -106,8 +108,8 @@ ul.topnav-full a {
 .secondery-menu .left-menu li a {
     color: #fff;
     font-family: miso-bold;
-    font-size: 14px;
-    padding: 3px;
+    font-size: 13px;
+    padding: 2px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -115,11 +117,12 @@ ul.topnav-full a {
     float: right;
     list-style-type: none;
     margin: 0;
-    padding: 2px 40px 0;
+    padding: 2px 45px 0;
 }
 .top-social img {
-    height: 24px;
-    padding: 0 3px;
+    height: 26px;
+    width: 26px;
+    padding: 0 2px;
 }
 
 /* Main Content */
@@ -375,15 +378,16 @@ ul.footer-social li:nth-child(5) img {
         margin-right: 15px;;
     }
     ul.footer-nav img {
-        height: 32px;
-        width: 32px;
+        padding: 0 3px 0;
+        height: 30px;
+        width: 30px;
     }
     ul.footer-social li img {
         height: 32px;
         width: 32px;
     }
-    ul.footer-nav li a {
-        font-size: 18px;
+    .footer-social img.convida-logo {
+        padding: 0 30px 0 0;
     }
 }
 
