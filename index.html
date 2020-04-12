@@ -82,71 +82,91 @@
 
 
                 <div class="sidebar">
+
                     <div class="map">
                         <iframe src="https://www.google.com/maps/d/embed?mid=1amOtS54WBe3YdNMq8NIkbGIKBAw" width="100" height="100"></iframe>
                     </div>
+
                     <div class="search">
+
                         <h3>Search</h3>
-                        <form action="#">
-                            <label for="destination">Destination:</label><br>
-                            <input type="text" id="destination" name="destination" value="Destination"><br>
 
-                            <br>
-                            <span class="double">
-                                <span class="half">
-                                <label for="checkin" required>Checkin:</label>
-                                <input type="date" id="checkin" name="checkin" value="Checkin" required>
-                                </span>
-                                <span class="half">
-                                <label for="nights">Nights:</label><br>
-                                <input type="number" id="nights" name="nights" value="Nights" placeholder="1" min="1" max="30" required>
-                                </span>
-                            </span>
-                            <br>
+                        <form clas="search-form" action="#">
+
+                            <div class="basic-search">
+
+                                <label for="destination">Destination:</label><br>
+                                <input type="text" id="destination" name="destination" value="Destination"><br>
+
+                                <div class="double">
+                                    <span class="half1">
+                                    <label for="checkin" required>Check in:</label> <br>
+                                    <input type="date" id="checkin" name="checkin" value="Checkin" required>
+                                    </span>
+                                    <span class="half2">
+                                    <label for="nights">Nights:</label><br>
+                                    <input type="number" id="nights" name="nights" value="Nights" placeholder="1" min="1" max="30" required>
+                                    </span>
+
+                                </div>
+
+                            </div>    
                             
-                            <span class="advanced">Advanced Search +</span>
+                            <div class="advanced"><a href="#">Advanced Search +</a></div>
                             <hr>
-                            
-                            <br>
 
-                            <div class="rate">Rate (Per Night)</div>
-                            
-                            <input type="checkbox" id="rate1" name="rate1" value="$0 - $50">
-                            <label for="rate1">$0 - $50</label><br>
-                            <input type="checkbox" id="rate2" name="rate2" value="$50 - $100">
-                            <label for="rate2">$50 - $100</label><br>
-                            <input type="checkbox" id="rate3" name="rate3" value="$100 - $150">
-                            <label for="rate3">$100 - $150</label><br>
-                            <input type="checkbox" id="rate3" name="rate3" value="$150+">
-                            <label for="rate3">$150+</label><br><br>
+                            <div class="advanced-search">
 
-                            <div class="type">Property Type</div>
-                            
-                            <input type="checkbox" id="apartments" name="apartments" value="apartments">
-                            <label for="rate1">Apartments</label><br>
-                            <input type="checkbox" id="hotels" name="hotels" value="hotels">
-                            <label for="hotels">Hotels</label><br>
-                            <input type="checkbox" id="boats" name="boats" value="boats">
-                            <label for="boats">Boats</label><br>
-                            <input type="checkbox" id="villas" name="villas" value="villas">
-                            <label for="villas">Villas</label><br><br>
-                            <span>Show All</span><br><br>
+                                <div class="rates">
+                                    <div class="rate">Rate (per night)</div>
+                                    
+                                    <input type="checkbox" id="rate1" name="rate1" value="$0 - $50">
+                                    <label for="rate1">$0 - $50</label><br>
+                                    <input type="checkbox" id="rate2" name="rate2" value="$50 - $100">
+                                    <label for="rate2">$50 - $100</label><br>
+                                    <input type="checkbox" id="rate3" name="rate3" value="$100 - $150">
+                                    <label for="rate3">$100 - $150</label><br>
+                                    <input type="checkbox" id="rate3" name="rate3" value="$150+">
+                                    <label for="rate3">$150+</label><br>
+                                </div>
 
-                            <div class="type">Property Villas</div>
-                            
-                            <input type="checkbox" id="wifi" name="wifi" value="wifi">
-                            <label for="wifi">Wi-fi</label><br>
-                            <input type="checkbox" id="parking" name="parking" value="parking">
-                            <label for="parking">Free Parking</label><br>
-                            <input type="checkbox" id="boats" name="boats" value="boats">
-                            <label for="boats">Airport Shuttle</label><br>
-                            <input type="checkbox" id="shuttle" name="shuttle" value="shuttle">
-                            <label for="shuttle">Shuttle</label><br><br>
+                                <div class="types">
+                                    <div class="type">Property Type</div>
+                                
+                                    <input type="checkbox" id="apartments" name="apartments" value="apartments">
+                                    <label for="rate1">Apartments</label><br>
+                                    <input type="checkbox" id="hotels" name="hotels" value="hotels">
+                                    <label for="hotels">Hotels</label><br>
+                                    <input type="checkbox" id="boats" name="boats" value="boats">
+                                    <label for="boats">Boats</label><br>
+                                    <input type="checkbox" id="villas" name="villas" value="villas">
+                                    <label for="villas">Villas</label><br>
+                                    <span class="show-all"><a href="#">SHOW ALL</a></span>
+                                </div>
 
-                            <input type="submit" value="Search">
+                                <div class="facilities">
+                                    <div class="facility">Property Facility</div>
+                                
+                                    <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                                    <label for="wifi">Wi-fi</label><br>
+                                    <input type="checkbox" id="parking" name="parking" value="parking">
+                                    <label for="parking">Free Parking</label><br>
+                                    <input type="checkbox" id="boats" name="boats" value="boats">
+                                    <label for="boats">Airport Shuttle</label><br>
+                                    <input type="checkbox" id="shuttle" name="shuttle" value="shuttle">
+                                    <label for="shuttle">Shuttle</label>
+                                </div>
+
+                            </div>
+
+                            <input class="search-btn" type="submit" value="Search">
+
                           </form> 
+
                     </div>
                 </div>
+
+
                 <div class="main-content">
                     <div class="content-items">
                         <div class="content-slider">
