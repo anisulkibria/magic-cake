@@ -269,13 +269,14 @@ Main Content
 }
 .content-slider .slide img{
     display: flex;
-    max-width: 440px;
+    max-width: 435px;
     max-height: 345px;
     width: auto;
 }
 .content-slider .saver {
     position: absolute;
     margin: -33px;
+    z-index: 1;
 }
 .content-excerpt {
     display: grid;
@@ -393,6 +394,55 @@ button {
     max-width: 100%;
 }
 
+
+/*
+====================
+Content Item Sliders
+====================
+*/
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 
+{
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
 
 /*
 =======
