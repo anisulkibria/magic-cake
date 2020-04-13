@@ -173,6 +173,12 @@ Main Content
 }
 .right-space {
     grid-column: 12 / 13; 
+    width: 30px;
+    background: #fff;
+    float: right;
+    margin: 0 0 0 auto;
+    opacity: 0.7;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.25);
 }
 .top-slide {
     grid-area: b;
@@ -229,47 +235,85 @@ Main Content
     display: none;
 }
 .main-content {
-    margin: 20px 0;
+    margin: 40px 0;
     grid-area: k;
 }
 .content-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-auto-columns: 1fr;
     background-color: #fff;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
-    margin: 0 0 30px 0;
+    margin: 0 0 130px 0;
+}
+.item2, item3 {
+    margin: 0 0 90px 0;
 }
 .content-slider {
     grid-column: 1 / 2;
 }
-.content-slider img{
+.content-slider .slide img{
     display: flex;
-    width: 100%;
+    max-width: 100%;
+    max-height: 345px;
+    width: auto;
+}
+.content-slider .saver {
+    position: absolute;
+    margin: -33px;
 }
 .content-excerpt {
     display: grid;
     grid-auto-columns: 1fr;
     grid-column: 2/ -1;
-    padding: 20px 30px;
+    padding: 30px;
 }
 .item-details {
     grid-column: 1 / 4;
+    padding: 20px 10px;
+    font-family: miso-bold;
+    color: #666;
+}
+.item-details h2{
+    border-radius: 50px;
+    background-color: #027DC5;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    padding: 10px 20px 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 0 5px -10px;
+}
+.item-details h3{
+    color: #666;
+    font-size: 26px;
+    margin: 5px;
 }
 .item-reviews {
     grid-column: 4 / 5;
+    font-family: miso-bold;
+    color: #666;
 }
 ul.features {
     padding: 0;
 }
 ul.features li {
-    margin: 10px 15px;
+    margin: 5px 15px;
+    font-size: 20px;
+    font-family: miso-bold;
+    color: #666;
 }
 .content-excerpt .price {
+    font-size: 18px;
     display: flex;
     clear: both;
     padding-top: 20px;
 }
+.content-excerpt .price img{
+    padding: 0 10px 0 0;
+}
+
 
 /*
 =======
@@ -284,7 +328,7 @@ Sidebar
 }
 .map{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom: 23%;
     position:relative;
     height:0;
     margin: 20px;
@@ -437,7 +481,7 @@ input[type=checkbox]:checked:after {
 
 .promo {
     background-color: #fff;
-    margin: 100px 20px;
+    margin: 140px 20px;
     padding: 10px;
     max-width: 180px;
 }
@@ -745,6 +789,7 @@ Media Queries
     }
     .top-social img {
         height: 18px;
+        width: 18px;
     }
     .top-slide {
         display: none;
