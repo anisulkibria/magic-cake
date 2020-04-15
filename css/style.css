@@ -161,7 +161,7 @@ Main Content
     grid-auto-columns: 1fr;
     display: grid;
 }
-.content-header {
+.content-home {
     display: grid;
     grid-template-columns: 2fr auto 2fr;
     grid-template-areas: 
