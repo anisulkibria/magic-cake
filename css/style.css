@@ -697,14 +697,99 @@ ul.footer-social li:last-child img {
     height: 18px;
 }
 
-
+/* 
+=============
+Details Page
+=============
+*/
+html {
+    line-height: .95;
+    font-family: -miso;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: unset;
+    box-sizing: unset;
+}
+.main-details {
+    display: grid;
+    grid-template-columns: auto;
+    font-family: miso;
+    margin: 0 auto;
+}
+.main-details .top-slide {
+    padding: 30px 0 0;
+}
+.main-details .content-wrapper {
+    background: none;
+    display: block;
+    margin: 0;
+}
+.details-header {
+    background: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 275px;
+}
+.wheel-slider .go-next {
+    position: absolute;
+    right: 0;
+    bottom: 200px;
+}
+.main-details .top-slide img{
+    max-width: 950px;
+}
+.wheel-slider {
+    display: flex;
+}
+.wheel-slider img{
+    max-height: 350px;
+}
+.carousel-item {
+    opacity: 1 !important;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+  }
+.middle-indicator{
+    position:absolute;
+    top:50%;
+    }
+.middle-indicator-text{
+    font-size: 6rem;
+}
+a.middle-indicator-text{
+    color:white !important;
+}
+.content-indicator{
+    width: 80px;
+    height: 80px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+}
+    .indicators{
+    visibility: hidden;
+}
+ 
 /* 
 =============
 Media Queries 
 =============
 */
 @media (min-width: 1366px) { 
-    .main {
+    .main, .main-details {
         width: 1344px;
     }
 }
@@ -1205,9 +1290,12 @@ Media Queries
     .footer-social img.convida-logo {
         padding: 0 5px 0 0;
     }
+    .slider {
+        display: none
+    }
 }
 @media (max-width: 400px){
-    .main {
+    .main, .main-details {
         min-width: 400px;
     }
     .secondery-menu .left-menu li a{

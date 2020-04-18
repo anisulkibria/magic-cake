@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolo Mágico</title>
 
-    <script src="https://kit.fontawesome.com/eb22de65c8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div class="main">
+    <div class="main-details">
 
         <!-- Start Header Aria -->
         <div class="header">
@@ -61,13 +65,46 @@
 
              <!-- Start Content Header -->
             <div class="content-details">
-                <div class="top-slide">
-                    <img src="img/slide-details.png" alt="">
-                </div>
-                <div class="top-slide-mobile">
-                    <img src="img/slide-mobile-details.png" alt="">
+
+                <div class="details-header">
+                    
+                    <div class="top-slide">
+                        <img src="img/slide-details.png" alt="">
+                    </div>
+                    <div class="top-slide-mobile">
+                        <img src="img/slide-mobile-details.png" alt="">
+                    </div>
+    
+    
+                    <!-- Start Header Slider -->
+    
+    
+                    <div class="wheel-slider">
+                        <div class="carousel">
+
+                            <div class="left" style="margin-top:240px">
+                                <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+                               </div>
+                               
+                               <div class="right" style="margin-top:240px">
+                               <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+                               </div>
+
+                            <a class="carousel-item" href="#one!"><img src="img/1.jpg"></a>
+                            <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+                            <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+                            <a class="carousel-item" href="#one!"><img src="img/1.jpg"></a>
+                            <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+                            <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+                            <a class="carousel-item" href="#one!"><img src="img/1.jpg"></a>
+                            <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+                            <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+                        </div>
+                        </div>
                 </div>
 
+
+                <!-- End Header Slider -->
 
                 <div class="main-content">
 
@@ -110,7 +147,59 @@
         </div>
 
     </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <script>
+        $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+
+
+      //start carrousel
+   $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: false
+   });
+
+
+   // move next carousel
+   $('.moveNextCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+   });
+
+   // move prev carousel
+   $('.movePrevCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
+   });
+    </script>
+    <style>
+      .wheel-slider {
+        height: 510px;
+      }  
+      .wheel-slider img {
+          min-height: 98%;
+      }
+      .carousel {
+        height: 510px;
+      }
+      .carousel .carousel-item {
+        width: 800px;
+        height: 98%;
+      }
+      .carousel .carousel-item>img {
+        border: 18px solid #fff;
+      }
+      .carousel .active>img {
+        border: 7px solid #fff;
+        border-radius: 4px;
+      }
+    </style>
     <script src="js/script.js"></script>
 
 </body>
