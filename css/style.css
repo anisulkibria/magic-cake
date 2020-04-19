@@ -23,12 +23,6 @@ Font Face
     font-family: helvetica-neue-bold;
     src: url(../fonts/HelveticaNeueBold.ttf);
 }
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/materialize-icon.woff2) format('woff2');
-  }
   
 /* 
 ======
@@ -738,68 +732,21 @@ html {
     background-repeat: no-repeat;
     background-size: 100% 275px;
 }
-/* Wheel Slider - Details*/
-.wheel-slider .go-next {
-    position: absolute;
-    right: 0;
-    bottom: 200px;
-}
 #details .top-slide img {
     display: grid;
     margin: 0 auto;
     max-width: 950px;
 }
+/* Wheel Slider - Details*/
 .wheel-slider {
     display: flex;
-}
-.wheel-slider img {
-    max-height: 350px;
-}
-.carousel-item {
-    opacity: 1 !important;
-}
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-}
-.middle-indicator {
-    position:absolute;
-    top:50%;
-}
-.middle-indicator-text {
-    font-size: 6rem;
-}
-a.middle-indicator-text {
-    color:white !important;
-}
-.content-indicator {
-    width: 80px;
-    height: 80px;
-    background: none;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px; 
-}
-.indicators {
-    visibility: hidden;
-}
-.wheel-slider {
     height: 510px;
-}  
-.wheel-slider img {
-      min-height: 98%;
 }
 .carousel {
- height: 510px;
+    height: 510px;
+   }
+.carousel-item {
+    opacity: 1 !important;
 }
 .carousel .carousel-item {
     width: 800px;
@@ -807,10 +754,16 @@ a.middle-indicator-text {
 }
 .carousel .carousel-item>img {
     border: 18px solid #fff;
+    max-height: 350px;
+    min-height: 98%;
   }
 .carousel .active>img {
     border: 7px solid #fff;
     border-radius: 4px;
+}
+.wheel-slider img.arrow {
+    height: 50px;
+    padding: 10px;
 }
 /* Content -Details */
 #details .content {
@@ -946,6 +899,12 @@ a.middle-indicator-text {
     float: right;
     max-width: 330px;
     margin-top: -270px;
+}
+
+#details button.budget {
+    background: none;
+    border-radius: 100px;
+    overflow: hidden;
 }
 /* Sidebar - Details*/
 #details .sidebar {
