@@ -149,7 +149,7 @@ Secondary Menu
 Main Content 
 ============
 */
-.content-wrapper {
+.home .content-wrapper {
     margin: 5px 0 0;
     background-color: #E4F2F2;
     background: url(../img/bg.png) repeat left top;
@@ -249,11 +249,11 @@ Main Content
 .top-slide-mobile {
     display: none;
 }
-.main-content {
+.home .main-content {
     margin: 35px 0;
     grid-area: k;
 }
-.content-items {
+.content-item {
     display: grid;
     grid-template-columns: auto;
     grid-auto-columns: 1fr;
@@ -376,7 +376,7 @@ ul.features li {
     color: #2C847F;
     margin: 25px 0 5px 0;
 }
-button {
+.content-home button {
     display: block;
     cursor: pointer;
     margin: 15px auto 10px;
@@ -450,7 +450,7 @@ img {
 Sidebar
 =======
 */
-.sidebar{
+.home .sidebar{
     padding-right: 30px;
     max-width: 220px;
     min-height: 120px;
@@ -710,25 +710,21 @@ html {
     -webkit-box-sizing: unset;
     box-sizing: unset;
 }
-.main-details {
+.details .main {
     display: grid;
     grid-template-columns: auto;
     font-family: miso;
     margin: 0 auto;
 }
-.main-details .top-slide {
+.details .top-slide {
     padding: 30px 0 0;
 }
-.main-details .content-wrapper {
-    background: none;
-    display: block;
-    margin: 0;
-}
-.details-header {
+.details .content-header {
     background: url(../img/bg2.png);
     background-repeat: no-repeat;
     background-size: 100% 275px;
 }
+/* Wheel Slider - Details*/
 .wheel-slider .go-next {
     position: absolute;
     right: 0;
@@ -758,8 +754,6 @@ html {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -moz-font-feature-settings: 'liga';
-    -moz-osx-font-smoothing: grayscale;
   }
 .middle-indicator{
     position:absolute;
@@ -779,10 +773,104 @@ a.middle-indicator-text{
     -webkit-border-radius: 50px;
     border-radius: 50px; 
 }
-    .indicators{
+.indicators{
     visibility: hidden;
 }
- 
+.wheel-slider {
+    height: 510px;
+}  
+.wheel-slider img {
+      min-height: 98%;
+}
+.carousel {
+ height: 510px;
+}
+.carousel .carousel-item {
+    width: 800px;
+    height: 98%;
+}
+.carousel .carousel-item>img {
+    border: 18px solid #fff;
+  }
+.carousel .active>img {
+    border: 7px solid #fff;
+    border-radius: 4px;
+  }
+/* Content -Details */
+.details .content {
+    margin-top: -70px;;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+/* Main Content - Details*/
+.details .main-content {
+    border-right: 7px solid #eee;
+    padding: 20px 60px;
+    grid-column: 1 / 10;
+}
+.blank-space {
+    height: 80px;
+}
+.details button{
+    background: #81BC3E;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-family: miso-bold;
+}
+.details button a{
+    color: #fff;
+}
+.details button h3{
+    margin: 8px 10px 2px;
+    width: 320px;
+}
+.details h4 {
+    font-family: miso-bold;
+    color: #6d6e72;
+    padding: 0 25px;
+}
+.details .features{
+    grid-template-columns: repeat(7, 1fr);
+    display: grid;
+}
+.heading-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.heading-section {
+    display: grid;
+}
+.details .features span {
+    font-size: 26PX;
+    color: #96CDCB;
+    font-family: miso-bold;
+}
+.details .features img{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 35px;
+}
+.details .features .feature {
+    padding: 10px;
+    text-align: center;
+}
+/* Sidebar - Details*/
+.details .sidebar {
+    background-color: #D6ECEB;
+    grid-column: 10 / 13;
+}
+.details .sidebar {
+    padding: 20px;
+}
+.details .sidebar h4{
+    color: #2D8580;
+    font-family: miso-bold;
+}
+
+  
 /* 
 =============
 Media Queries 
@@ -972,7 +1060,7 @@ Media Queries
         margin: -22px;
         width: 150px;
     }
-    .content-items {
+    .content-item {
         max-width: 730px;
     }
     .item-details {
@@ -990,7 +1078,7 @@ Media Queries
     .right-space {
         display: none;
     }
-    .content-items{
+    .content-item {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
     .content-slider, .content-excerpt {
@@ -1151,7 +1239,7 @@ Media Queries
         display: none;
         font-size: 16px;
     }
-    .main-content {
+    .home .main-content {
         margin: 35px 20px;
     }
     .mbl-advanced-search {
@@ -1228,7 +1316,7 @@ Media Queries
     .mbl-promo img {
         width: 100%;
     }
-    .content-items {
+    .content-item {
         margin: 0 0 40px 0;  
     }
     .item-details h2 a {
