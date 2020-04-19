@@ -15,7 +15,21 @@ Font Face
     font-family: miso-light;
     src: url(../fonts/miso-light.otf);
 }
-
+@font-face {
+    font-family: helvetica-neue;
+    src: url(../fonts/HelveticaNeue.ttf);
+}
+@font-face {
+    font-family: helvetica-neue-bold;
+    src: url(../fonts/HelveticaNeueBold.ttf);
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/materialize-icon.woff2) format('woff2');
+  }
+  
 /* 
 ======
 Global 
@@ -149,7 +163,7 @@ Secondary Menu
 Main Content 
 ============
 */
-.home .content-wrapper {
+#home .content-wrapper {
     margin: 5px 0 0;
     background-color: #E4F2F2;
     background: url(../img/bg.png) repeat left top;
@@ -195,11 +209,11 @@ Main Content
     margin: -5px -28px;
     height: 24px;
 }
-.top-slide {
+#home .top-slide {
     grid-area: b;
     padding: 30px 0 20px;
 }
-.top-slide img {
+#home .top-slide img {
     display: block;
     max-width: 800px;
     margin: 0 auto;
@@ -249,7 +263,7 @@ Main Content
 .top-slide-mobile {
     display: none;
 }
-.home .main-content {
+#home .main-content {
     margin: 35px 0;
     grid-area: k;
 }
@@ -450,7 +464,7 @@ img {
 Sidebar
 =======
 */
-.home .sidebar{
+#home .sidebar{
     padding-right: 30px;
     max-width: 220px;
     min-height: 120px;
@@ -710,16 +724,16 @@ html {
     -webkit-box-sizing: unset;
     box-sizing: unset;
 }
-.details .main {
+#details .main {
     display: grid;
     grid-template-columns: auto;
     font-family: miso;
     margin: 0 auto;
 }
-.details .top-slide {
+#details .top-slide {
     padding: 30px 0 0;
 }
-.details .content-header {
+#details .content-header {
     background: url(../img/bg2.png);
     background-repeat: no-repeat;
     background-size: 100% 275px;
@@ -730,13 +744,15 @@ html {
     right: 0;
     bottom: 200px;
 }
-.main-details .top-slide img{
+#details .top-slide img {
+    display: grid;
+    margin: 0 auto;
     max-width: 950px;
 }
 .wheel-slider {
     display: flex;
 }
-.wheel-slider img{
+.wheel-slider img {
     max-height: 350px;
 }
 .carousel-item {
@@ -754,18 +770,18 @@ html {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-  }
-.middle-indicator{
+}
+.middle-indicator {
     position:absolute;
     top:50%;
-    }
-.middle-indicator-text{
+}
+.middle-indicator-text {
     font-size: 6rem;
 }
-a.middle-indicator-text{
+a.middle-indicator-text {
     color:white !important;
 }
-.content-indicator{
+.content-indicator {
     width: 80px;
     height: 80px;
     background: none;
@@ -773,7 +789,7 @@ a.middle-indicator-text{
     -webkit-border-radius: 50px;
     border-radius: 50px; 
 }
-.indicators{
+.indicators {
     visibility: hidden;
 }
 .wheel-slider {
@@ -795,23 +811,23 @@ a.middle-indicator-text{
 .carousel .active>img {
     border: 7px solid #fff;
     border-radius: 4px;
-  }
+}
 /* Content -Details */
-.details .content {
+#details .content {
     margin-top: -70px;;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 /* Main Content - Details*/
-.details .main-content {
+#details .main-content {
     border-right: 7px solid #eee;
-    padding: 20px 60px;
+    padding: 20px 40px;
     grid-column: 1 / 10;
 }
 .blank-space {
-    height: 80px;
+    height: 100px;
 }
-.details button{
+#details button {
     background: #81BC3E;
     cursor: pointer;
     border-radius: 50px;
@@ -819,53 +835,127 @@ a.middle-indicator-text{
     color: #fff;
     font-family: miso-bold;
 }
-.details button a{
+#details button a {
     color: #fff;
 }
-.details button h3{
-    margin: 8px 10px 2px;
+#details button h3 {
+    margin: 8px 5px 2px;
     width: 320px;
+    text-transform: uppercase;
 }
-.details h4 {
+#details .heading-section h4 {
     font-family: miso-bold;
     color: #6d6e72;
     padding: 0 25px;
 }
-.details .features{
-    grid-template-columns: repeat(7, 1fr);
-    display: grid;
-}
-.heading-section{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 .heading-section {
     display: grid;
+    padding-left: 40px;
+    grid-template-columns: repeat(3, 1fr);
 }
-.details .features span {
-    font-size: 26PX;
+#details .review,  #details .favorite {
+    font-size: 34px;
+    font-family: miso-bold;
+    color: #58595B;
+    text-transform: uppercase;
+}
+#details .review {
+    padding: 0 30px;
+}
+#details .review .star {
+    width: 44px;
+}
+#details .favorite {
+    margin: 0 0 0 auto;
+    padding: 10px 30px;
+}
+#details .favorite img{
+    width: 30px;
+}
+#details .features{
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+}
+#details .features span {
+    font-size: 24PX;
     color: #96CDCB;
     font-family: miso-bold;
 }
-.details .features img{
+.all-features {
+    grid-column: 1 / 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+}
+.themes {
+    grid-column: 10 / -1;
+    margin: 0 0 0 auto;
+}
+.themes img{
+    width: 188px;
+}
+#details .all-features img {
     padding: 10px;
     display: block;
     margin: 0 auto;
-    height: 35px;
+    height: 40px;
 }
-.details .features .feature {
+#details .features .feature {
     padding: 10px;
     text-align: center;
 }
+.information-section {
+    padding: 20px 0 10px 50px;
+}
+.information-section h4{
+    font-size: 32px;
+    color: #328D87;
+    font-family: miso-bold;
+    margin: 10px 0 5px;
+}
+.information-section .bold {
+    color: #6D6E71;
+    font-size: 19px;
+    font-family: miso-bold;
+}
+.information-section p{
+    font-size: 24px;
+    color: #58595B;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.important-info .bold{
+    font-family: helvetica-neue-bold;
+}
+.important-info p{
+    color: #6D6E70;
+    font-family: helvetica-neue;
+    font-size: 18px;
+}
+.information-section .small p{
+    font-size: 18px;
+    color: #58595B;
+    line-height: 26px;
+}
+.content-block {
+    padding: 0 0 20px 0;
+}
+.about-party p, .about-buffet p{
+    max-width: 530px;
+}
+.information-section .tips {
+    float: right;
+    max-width: 330px;
+    margin-top: -270px;
+}
 /* Sidebar - Details*/
-.details .sidebar {
+#details .sidebar {
     background-color: #D6ECEB;
     grid-column: 10 / 13;
 }
-.details .sidebar {
+#details .sidebar {
     padding: 20px;
 }
-.details .sidebar h4{
+#details .sidebar h4 {
     color: #2D8580;
     font-family: miso-bold;
 }
@@ -1239,7 +1329,7 @@ Media Queries
         display: none;
         font-size: 16px;
     }
-    .home .main-content {
+    #home .main-content {
         margin: 35px 20px;
     }
     .mbl-advanced-search {
