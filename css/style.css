@@ -778,7 +778,7 @@ html {
     grid-column: 1 / 10;
 }
 .blank-space {
-    height: 100px;
+    height: 90px;
 }
 #details button {
     background: #81BC3E;
@@ -799,7 +799,7 @@ html {
 #details .heading-section h4 {
     font-family: miso-bold;
     color: #6d6e72;
-    padding: 0 25px;
+    padding: 5px 25px 10px;
 }
 .heading-section {
     display: grid;
@@ -813,7 +813,7 @@ html {
     text-transform: uppercase;
 }
 #details .review {
-    padding: 0 30px;
+    padding: 0 0 0 40px;
 }
 #details .review .star {
     width: 44px;
@@ -828,6 +828,7 @@ html {
 #details .features{
     grid-template-columns: repeat(12, 1fr);
     display: grid;
+    margin-top: 15px;
 }
 #details .features span {
     font-size: 24PX;
@@ -900,11 +901,145 @@ html {
     max-width: 330px;
     margin-top: -270px;
 }
-
+#details .shifts {
+    padding-left: 58px;
+}
+#details .shifts h4 {
+    margin: 5px 0;
+}
+#details  .all-shifts {
+    display: flex;
+    text-align: center;
+    font-size: 22px;
+    font-family: miso-bold;
+}
+#details  .all-shifts img {
+    width: 40px;
+}
+#details .morning {
+    color: #2C8480;
+    margin-right: 20px;
+}
+#details .evening {
+    color: #8c8b8b;
+}
+.peoples {
+    margin: 30px 0;
+}
+.people-count {
+    color: #2C8480;
+    padding: 0 12px;
+    font-size: 32px;
+    font-family: miso-bold;
+    vertical-align: bottom;
+}
+#details .price {
+    margin: 20px 0;
+}
+#details .price img{
+    float: left;
+    max-width: 24px;
+}
+.price-count {
+    color: #2C8480;
+    padding: 0 10px 0 30px;;
+    font-size: 54px;
+    font-family: miso-bold;
+    vertical-align: bottom;
+}
+.purchase-extra {
+    color: #2C8480;
+    font-size: 30px;
+    font-family: miso-bold;
+    margin: 20px 0;
+}
+.purchase-extra img{
+    float: left;
+    max-width: 38px;
+    margin: 5px 20px 0 0;
+}
+.extras {
+    margin: 20px 0;
+}
+.extra {
+    color: #6d6e72;
+    margin: 10px 0;
+    font-size: 19px;
+    font-family: miso-bold;
+}
+.extra  img {
+    max-width: 42px;
+}
+.extra-feature {
+    padding: 0 0 0 12px;
+}
+#details button.booking-free {
+    display: block;
+    margin: 40px 0 40px 40px;
+    background: #E0392D;
+    padding: 0 25px;
+}
+#details button.payment-now {
+    display: block;
+    margin: 40px 0 40px 40px;
+    background:#EA8430;
+    padding: 0 20px;
+}
+#details .payment-method {
+    color: #2D857F;
+    font-size: 24px;
+    font-family: miso-bold;
+}
+#details .payment-method input::-webkit-input-placeholder  { 
+    color: #2C8480;
+}
+#details input:-moz-placeholder { 
+    color: #2C8480;
+}
+#details input::-moz-placeholder { 
+    color: #2C8480;
+}
+#details input:-ms-input-placeholder{ 
+    color: #2C8480;
+}
+#details .payment-method #cheque, .payment-method #credit-card{
+    background: #C2D7D8;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 24px;
+    padding: 5px 0 0 14px;
+    text-align: right;
+    width: 25px;
+}
+#details .payment {
+    display: flex;
+}
+.method1, .method2 {
+    text-align: right;
+    width: 140px;
+}
+.method2 {
+    padding-top: 8px;
+}
+#details .payment-method input {
+    margin-left: 15px;
+}
 #details button.budget {
     background: none;
     border-radius: 100px;
     overflow: hidden;
+}
+#details button.budget img{
+    width: 220px;
+}
+.payment-method .arrow {
+    margin: 20px 0 0 3px;
+}
+.payment-method .arrow:after {
+    color: #77BEBD;
+    content: ' \005E';
+    font-size: 30px;
 }
 /* Sidebar - Details*/
 #details .sidebar {

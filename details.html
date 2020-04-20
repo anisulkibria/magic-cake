@@ -8,10 +8,12 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    <!-- Font Awesome -->
+    <script src="js/font-awesome.js" crossorigin="anonymous"></script>
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Bolo Mágico</title>
+    <title>Details | Bolo Mágico</title>
 </head>
 
 <body id="details">
@@ -213,95 +215,130 @@
                 <div class="sidebar">
 
                     <div class="blank-space"></div>
-                    <h4>TURNOS</h4>
-                    <span class="manha">Manhã</span>
-                    <span class="tarde">Tarde</span>
-                    <br>
-                    <img src="img/circle-blue.png" alt="">
-                    <img src="img/circle-ash.png" alt="">
-                    <br>
-                    <img src="img/icon-people.png" alt="">
-                    <span class="people-count">PESSOAS: 100</span>
+
+                    <div class="shifts">
+
+                        <h4>TURNOS</h4>
+
+                        <div class="all-shifts">
+                            <div class="morning">
+                                <div class="manha">Manhã</div>
+                                <a href="#"><img src="img/circle-blue.png" alt=""></a>
+                            </div>
+    
+                            <div class="evening">
+                                <div class="tarde">Tarde</div>
+                                <a href=""><img src="img/circle-ash.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="peoples">
+                        <img src="img/icon-people.png" alt="">
+                        <span class="people-count">PESSOAS: 100</span>
+                    </div>
+
+                    <div class="price">
+                        <img src="img/dollar-symbol.png" alt="">
+                        <span class="price-count">R$2000,00</span>
+                    </div>
 
                     <div class="purchase-extra">
                         <img src="img/icon-cart.png" alt="">
-                        <span>SELECIONE OS 
-                            ITENS EXTRAS</span>
+                        <span>SELECIONE OS <br> ITENS EXTRAS</span>
                     </div>
 
-                    <div class="extra">
-                        <img src="img/icon-enable.png" alt="">
-                        <span>Tema Extra R$600,00</span>
+                    <div class="extras">
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-enable.png" alt=""></a>
+                            <span class="extra-feature">Tema Extra R$600,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Coluna de Bola por coluna R$70,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Animação com DJ R$600,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-enable.png" alt=""></a>
+                            <span class="extra-feature">Mágico $400,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-enable.png" alt=""></a>
+                            <span class="extra-feature">Cerveja Caixa R$240,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Taxa de Rolha Cerveja R$250,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Coquetel de frutas R$1000,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-enable.png" alt=""></a>
+                            <span class="extra-feature">Mesa de Guloseimas R$500,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Buffet de Sorvete $400,00</span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Cascata de Chocolate R$600,00 </span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-enable.png" alt=""></a>
+                            <span class="extra-feature">Crepe no Palito R$200,00 </span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-enable.png" alt=""></a>
+                            <span class="extra-feature">Camarim R$200,00 </span>
+                        </div>
+
+                        <div class="extra">
+                            <a href="#"><img src="img/icon-disable.png" alt=""></a>
+                            <span class="extra-feature">Hora Adicional R$1.200,00 </span>
+                        </div>
+
                     </div>
 
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Coluna de Bola por coluna R$70,00</span>
+                    <button class="booking-free"> <h5> RESERVAR GRÁTIS </h5> </button>
+
+                    <button class="payment-now"><h5>FORMA DE PAGAMENTO</h5></button>
+
+                    <div class="payment-method">
+
+                        <div class="payment">
+                            <span class="method1">Tranferência <br> ou Cheque:</span>
+                            <input type="number" id="cheque" name="cheque" value="cheque" placeholder="1" min="1" max="30" required="">
+                            <a class="arrow" href="#"></a>
+                        </div>
+
+                        <div class="payment">
+                            <span class="method2">Cartão de crédito:</span>
+                            <input type="number" id="credit-card" name="credit-card" value="Credit-Card" placeholder="1" min="1" max="30" required="">
+                            <a class="arrow" href="#"></a>
+                        </div>
+
                     </div>
 
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Animação com DJ R$600,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-enable.png" alt="">
-                        <span>Mágico $400,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-enable.png" alt="">
-                        <span>Cerveja Caixa R$240,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Taxa de Rolha Cerveja R$250,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Coquetel de frutas R$1000,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-enable.png" alt="">
-                        <span>Mesa de Guloseimas R$500,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Buffet de Sorvete $400,00</span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Cascata de Chocolate R$600,00 </span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-enable.png" alt="">
-                        <span>Crepe no Palito R$200,00 </span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-enable.png" alt="">
-                        <span>Camarim R$200,00 </span>
-                    </div>
-
-                    <div class="extra">
-                        <img src="img/icon-disable.png" alt="">
-                        <span>Hora Adicional R$1.200,00 </span>
-                    </div>
-
-                    <button> <h5> RESERVAR GRÁTIS </h5> </button>
-
-                    <button><h5>FORMA DE PAGAMENTO</h5></button>
-
-                    <div class="select">Tranferência
-                        ou Cheque:</div>
-                    
-                    <div class="select">Cartão de crédito:</div>
 
                     <button class="budget"><img src="img/button-budget.png" alt=""></button>
 
