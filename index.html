@@ -484,8 +484,32 @@
 
             <!-- Start Right Space -->
             <div class="right-space">
-                <a href=""><img class="less-than" src="img/less-than.png" alt=""></a>
+
                 <a href="#"><img class="love-red" src="img/love-red.png" alt=""></a>
+
+                <!-- Star Favorites Mobile -->
+                <div class="right-favorites">
+                    <a href="#"><img class="right-love" src="img/love-red.png" alt=""></a><span class="favorite-txt">FAVORITOS</span>
+                    <a href="#"><img class="right-trash" src="img/trash.png" alt=""></a><span class="trash-txt">EXCLUIR</span>
+
+                    <div class="favorite-items">
+                        <div class="fav-item item1">
+                            <button>FESTA PIQUENIQUE</button>
+                            <img src="img/slider1.jpg" alt="">
+                        </div>
+                        <div class="fav-item item2">
+                            <button>FESTA ESCOLAR</button>
+                            <img src="img/slider2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <button class="budget"><img src="img/button-budget.png" alt=""></button>
+                </div>
+                <!-- End Favorites Mobile -->
+
+                <img id="expand" class="less-than" src="img/less-than.png" alt="">
+                <img id="expand" class="less-than" src="img/greater-than.png" alt="">
+
             </div>
             <!-- End Right Space -->
 
@@ -525,8 +549,14 @@
 
     </div>
 
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
     <!-- Content Items Slider -->
     <script src="js/content-slider.js"></script>
+
+    <!-- Expand Right Space -->
+    <script src="js/expand.js"></script>
 
 </body>
 
