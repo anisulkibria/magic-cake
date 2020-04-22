@@ -168,6 +168,7 @@ Main Content
     grid-column: 1 / -1;
     grid-auto-columns: 1fr;
     display: grid;
+    overflow: hidden;
 }
 .content-home {
     display: grid;
@@ -742,7 +743,13 @@ html {
 /* Wheel Slider - Details*/
 .wheel-slider {
     display: flex;
-    height: 510px;
+}
+.wheel-slider .left {
+    position: absolute;
+}
+.wheel-slider .right {
+    position: absolute;
+    right: 0;
 }
 .carousel {
     height: 510px;
@@ -803,10 +810,13 @@ html {
     color: #6d6e72;
     padding: 5px 25px 10px;
 }
-.heading-section {
+#details .heading-section {
     display: grid;
     padding-left: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+#details .heading-section .review-fav {
+    display: flex;
 }
 #details .review,  #details .favorite {
     font-size: 34px;
@@ -883,13 +893,13 @@ html {
     font-family: helvetica-neue-bold;
 }
 .important-info p{
-    color: #6D6E70;
+    color: #6D6E72;
     font-family: helvetica-neue;
     font-size: 18px;
 }
 .information-section .small p{
     font-size: 18px;
-    color: #58595B;
+    color: #6D6E72;
     line-height: 26px;
 }
 .content-block {
@@ -902,6 +912,9 @@ html {
     float: right;
     max-width: 330px;
     margin-top: -270px;
+}
+.mbl-themes {
+    display: none;
 }
 #details .shifts {
     padding-left: 58px;
@@ -1340,7 +1353,7 @@ Media Queries
     .display-hamburgar{
         font-size: 22px;
     }
-    .sidebar {
+    #home .sidebar {
        margin: 15px;
     }
     #checkin {
@@ -1413,7 +1426,7 @@ Media Queries
 }
 
 @media (max-width: 999px){
-    .sidebar{
+    #home .sidebar{
         display: none;
     }
 }
@@ -1681,6 +1694,103 @@ Media Queries
     }
     .slider {
         display: none
+    }
+    #details .main-content {
+        border: none;
+        padding: 20px 0;
+    }
+    #details button.heading{
+        height: 40px;
+    }
+    #details button h3 {
+        font-size: 30px;
+        width: 200px;
+    }
+    #details .heading-section h4 {
+        font-size: 26px;
+    }
+    .all-features {
+        grid-column: 1 / 13;
+    }
+    .themes {
+        display: none;
+    }
+    .information-section .tips {
+        float: none;
+        margin: 30px auto;
+    }
+    #details .content {
+        display: block;
+    }
+    #details .sidebar {
+        display: grid;
+    }
+    #details button.booking-free, #details button.payment-now {
+        margin:  20px auto;
+    }
+    #details .heading-section .review-fav {
+        display: block;
+    }
+    #details .heading-section h4 {
+        padding: 0 25px;
+    }
+    #details button h3 {
+        margin: 5px 5px 2px;
+    }
+    #details .review .star {
+        width: 30px;
+    }
+    #details .review {
+        padding: 0 20px 10px 20px;
+    }
+    #details .review, #details .favorite {
+        font-size: 24px;
+    }
+    #details .favorite {
+        padding: 10px;
+    }
+    #details .favorite img {
+        width: 19px;
+    }
+    .all-features {
+        padding: 5px 10px;
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+    #details .all-features img {
+        height: 26px;
+    }
+    #details .features span {
+        font-size: 18px;
+    }
+    .information-section h4 {
+        font-size: 36px;
+    }
+    .important-info p {
+        font-size: 20px;
+    }
+    .information-section {
+        padding: 20px 30px;
+    }
+    .information-section p {
+        padding-right: 50px;
+    }
+    .mbl-themes{
+        display: flex;
+    }
+    .mbl-themes img{
+        margin: 0 auto;
+    }
+    .sidebar {
+        margin: 20px;
+    }
+    .sidebar .blank-space {
+        display: none;
+    }
+    .peoples {
+        margin: 20px 0;
+    }
+    .purchase-extra {
+        margin: 20px 0 0;
     }
 }
 @media (max-width: 400px){
