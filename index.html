@@ -94,7 +94,8 @@
 
                     <!-- Map -->
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1amOtS54WBe3YdNMq8NIkbGIKBAw" width="100" height="100"></iframe>
+                        <img src="img/no-map.jpg" alt="">
+                        <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1amOtS54WBe3YdNMq8NIkbGIKBAw" width="100" height="100"></iframe> -->
                     </div>
 
                     <!-- Start Search -->
@@ -190,9 +191,67 @@
 
                     <!-- Start Advanced Search Mobile -->
                     <div class="mbl-advanced-search">
-                        <span>Pesquisa avançada +</span>
-                        <button>PESQUISAR</button>
-                        <a href="#"><img class="mbl-search-arrow" src="img/mbl-src-arrow.png" alt=""></a>
+                        
+                        <span class="advanced-title">Pesquisa avançada +</span>
+
+                    <!-- Start Search -->
+                    <div class="search">
+
+                        <form clas="search-form" action="#">
+
+                            <div class="advanced-search">
+
+                                <div class="rates">
+                                    <div class="rate">Rate (per night)</div>
+                                    
+                                    <input type="checkbox" id="rate1" name="rate1" value="$0 - $50">
+                                    <label for="rate1">$0 - $50</label><br>
+                                    <input type="checkbox" id="rate2" name="rate2" value="$50 - $100">
+                                    <label for="rate2">$50 - $100</label><br>
+                                    <input type="checkbox" id="rate3" name="rate3" value="$100 - $150">
+                                    <label for="rate3">$100 - $150</label><br>
+                                    <input type="checkbox" id="rate4" name="rate3" value="$150+">
+                                    <label for="rate4">$150+</label><br>
+                                </div>
+
+                                <div class="types">
+                                    <div class="type">Property Type</div>
+                                
+                                    <input type="checkbox" id="apartments" name="apartments" value="apartments">
+                                    <label for="apartments">Apartments</label><br>
+                                    <input type="checkbox" id="hotels" name="hotels" value="hotels">
+                                    <label for="hotels">Hotels</label><br>
+                                    <input type="checkbox" id="boats" name="boats" value="boats">
+                                    <label for="boats">Boats</label><br>
+                                    <input type="checkbox" id="villas" name="villas" value="villas">
+                                    <label for="villas">Villas</label><br>
+                                    <span class="show-all"><a href="#">SHOW ALL</a></span>
+                                </div>
+
+                                <div class="facilities">
+                                    <div class="facility">Property Facility</div>
+                                
+                                    <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                                    <label for="wifi">Wi-fi</label><br>
+                                    <input type="checkbox" id="parking" name="parking" value="parking">
+                                    <label for="parking">Free Parking</label><br>
+                                    <input type="checkbox" id="shuttle" name="boats" value="boats">
+                                    <label for="shuttle">Airport Shuttle</label><br>
+                                    <input type="checkbox" id="rooms" name="shuttle" value="shuttle">
+                                    <label for="rooms">Family Rooms</label>
+                                </div>
+
+                            </div>
+
+                            <button class="search-btn">PESQUISAR</button>
+
+                          </form> 
+
+                    </div>
+                    <!-- End Search -->
+
+                    <img id="expandSearch" class="mbl-search-arrow" src="img/mbl-src-arrow.png" alt="">
+
                     </div>
                     <!-- End Advanced Search Mobile -->
 
@@ -326,8 +385,24 @@
                     <div class="mbl-favorites">
                         <a href="#"><img class="mbl-love-fav" src="img/love-red.png" alt=""></a><span class="favorite-txt">FAVORITOS</span>
                         <a href="#"><img class="mbl-trash" src="img/trash.png" alt=""></a><span class="trash-txt">EXCLUIR</span>
+
+                        <div class="favorite-items">
+                            <div class="fav-item item1">
+                                <button>FESTA PIQUENIQUE</button>
+                                <img src="img/slider1.jpg" alt="">
+                            </div>
+                            <div class="fav-item item2">
+                                <button>FESTA ESCOLAR</button>
+                                <img src="img/slider2.jpg" alt="">
+                            </div>
+
+                            <button class="budget"><img src="img/button-favorites.png" alt=""></button>
+                        </div>
+
+
+
                         <br>
-                        <a href="#"><img class="mbl-fav" src="img/mbl-fav-arrow.png" alt=""></a>
+                        <img id="expandFav" class="mbl-fav" src="img/mbl-fav-arrow.png" alt="">
                     </div>
                     <!-- End Favorites Mobile -->
 
@@ -487,7 +562,7 @@
 
                 <a href="#"><img class="love-red" src="img/love-red.png" alt=""></a>
 
-                <!-- Star Favorites Mobile -->
+                <!-- Star Favorites Right Space -->
                 <div class="right-favorites">
                     <a href="#"><img class="right-love" src="img/love-red.png" alt=""></a><span class="favorite-txt">FAVORITOS</span>
                     <a href="#"><img class="right-trash" src="img/trash.png" alt=""></a><span class="trash-txt">EXCLUIR</span>
@@ -503,9 +578,9 @@
                         </div>
                     </div>
 
-                    <button class="budget"><img src="img/button-budget.png" alt=""></button>
+                    <button class="budget"><img src="img/button-favorites.png" alt=""></button>
                 </div>
-                <!-- End Favorites Mobile -->
+                <!-- End Favorites Right Space -->
 
                 <img id="expand" class="less-than" src="img/less-than.png" alt="">
                 <img id="expand" class="less-than" src="img/greater-than.png" alt="">

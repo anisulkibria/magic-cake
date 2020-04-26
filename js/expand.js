@@ -23,4 +23,26 @@ $(document).ready(function(){
         }
     });
     
+    $("#expandSearch").click(function(){
+        if (!expanded){
+            $(".mbl-advanced-search").addClass("mbl-advanced-search-expanded")
+            expanded = true;
+        }
+        else {
+            $(".mbl-advanced-search").removeClass("mbl-advanced-search-expanded")
+            expanded = false; 
+        }
+    });
+
+    $("#expandFav").click(function(){
+        if (!expanded){
+            $(".mbl-favorites").addClass("mbl-favorites-expanded")
+            expanded = true;
+        }
+        else {
+            $(".mbl-favorites").removeClass("mbl-favorites-expanded")
+            expanded = false; 
+        }
+    });
+    
 });
