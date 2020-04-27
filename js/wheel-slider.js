@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('.carousel').carousel();
 
   //start carrousel
@@ -6,17 +6,17 @@ $(document).ready(function(){
     fullWidth: true,
     indicators: false
   });
-  
-  
+
+
   // move next carousel
-  $('.moveNextCarousel').click(function(e){
+  $('.moveNextCarousel').click(function (e) {
     e.preventDefault();
     e.stopPropagation();
     $('.carousel').carousel('next');
   });
-  
+
   // move prev carousel
-  $('.movePrevCarousel').click(function(e){
+  $('.movePrevCarousel').click(function (e) {
     e.preventDefault();
     e.stopPropagation();
     $('.carousel').carousel('prev');

@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome -->
-    <script src="js/font-awesome.js" crossorigin="anonymous"></script>
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -62,31 +60,32 @@
         <!-- Start Content Wrapper -->
         <div class="content-wrapper">
 
-             <!-- Start Content Home -->
+            <!-- Start Content Home -->
             <div class="content-home">
 
                 <!-- Start Head Section -->
-                    <div class="top-slide">
-                        <img src="img/slide.png" alt="">
+                <div class="top-slide">
+                    <img src="img/slide.png" alt="">
+                </div>
+
+                <div class="top-slide-mobile">
+                    <img src="img/slide-mobile.png" alt="">
+                </div>
+
+                <div class="sorting">
+                    <span class="sort">Classificar por:</span> Recomendados | <a class="arrow" href="#">Distância</a> |
+                    <a class="arrow" href="#">Preco</a> | <a class="arrow" href="#">Categoria</a>
+                </div>
+
+                <div class="calendar">
+                    <img class="icon-calendar" src="img/calendar.png" alt="">
+                    <h5 class="date">Data: 21/12</h5>
+
+                    <div class="display-hamburgar"> <span class="display">Display</span> <a href="#"><img
+                                src="img/hamburgar1.png" alt=""></a> <a href="#"><img src="img/hamburgar2.png"
+                                alt=""></a>
                     </div>
-    
-                    <div class="top-slide-mobile">
-                        <img src="img/slide-mobile.png" alt="">
-                    </div>
-    
-                    <div class="sorting">
-                        <span class="sort">Classificar por:</span> Recomendados | <a class="arrow" href="#">Distância</a> | <a class="arrow"
-                            href="#">Preco</a> | <a class="arrow" href="#">Categoria</a>
-                    </div>
-    
-                    <div class="calendar">
-                        <img class="icon-calendar" src="img/calendar.png" alt="">
-                        <h5 class="date">Data: 21/12</h5>
-        
-                        <div class="display-hamburgar"> <span class="display">Display</span> <a href="#"><img
-                                    src="img/hamburgar1.png" alt=""></a> <a href="#"><img src="img/hamburgar2.png" alt=""></a>
-                        </div>
-                    </div>
+                </div>
                 <!-- End Head Section -->
 
                 <!-- Start Sidebar -->
@@ -112,18 +111,19 @@
 
                                 <div class="double">
                                     <span class="half1">
-                                    <label for="checkin" required>Check in:</label> <br>
-                                    <input type="date" id="checkin" name="checkin" value="Checkin" required>
+                                        <label for="checkin" required>Check in:</label> <br>
+                                        <input type="date" id="checkin" name="checkin" value="Checkin" required>
                                     </span>
                                     <span class="half2">
-                                    <label for="nights">Nights:</label><br>
-                                    <input type="number" id="nights" name="nights" value="Nights" placeholder="1" min="1" max="30" required>
+                                        <label for="nights">Nights:</label><br>
+                                        <input type="number" id="nights" name="nights" value="Nights" placeholder="1"
+                                            min="1" max="30" required>
                                     </span>
 
                                 </div>
 
-                            </div>    
-                            
+                            </div>
+
                             <div class="advanced"><a href="#">Advanced Search +</a></div>
                             <hr>
 
@@ -131,7 +131,7 @@
 
                                 <div class="rates">
                                     <div class="rate">Rate (per night)</div>
-                                    
+
                                     <input type="checkbox" id="rate1" name="rate1" value="$0 - $50">
                                     <label for="rate1">$0 - $50</label><br>
                                     <input type="checkbox" id="rate2" name="rate2" value="$50 - $100">
@@ -144,7 +144,7 @@
 
                                 <div class="types">
                                     <div class="type">Property Type</div>
-                                
+
                                     <input type="checkbox" id="apartments" name="apartments" value="apartments">
                                     <label for="apartments">Apartments</label><br>
                                     <input type="checkbox" id="hotels" name="hotels" value="hotels">
@@ -158,7 +158,7 @@
 
                                 <div class="facilities">
                                     <div class="facility">Property Facility</div>
-                                
+
                                     <input type="checkbox" id="wifi" name="wifi" value="wifi">
                                     <label for="wifi">Wi-fi</label><br>
                                     <input type="checkbox" id="parking" name="parking" value="parking">
@@ -173,7 +173,7 @@
 
                             <input class="search-btn" type="submit" value="Search">
 
-                          </form> 
+                        </form>
 
                     </div>
                     <!-- End Search -->
@@ -191,66 +191,66 @@
 
                     <!-- Start Advanced Search Mobile -->
                     <div class="mbl-advanced-search">
-                        
+
                         <span class="advanced-title">Pesquisa avançada +</span>
 
-                    <!-- Start Search -->
-                    <div class="search">
+                        <!-- Start Search -->
+                        <div class="search">
 
-                        <form clas="search-form" action="#">
+                            <form clas="search-form" action="#">
 
-                            <div class="advanced-search">
+                                <div class="advanced-search">
 
-                                <div class="rates">
-                                    <div class="rate">Rate (per night)</div>
-                                    
-                                    <input type="checkbox" id="rate1" name="rate1" value="$0 - $50">
-                                    <label for="rate1">$0 - $50</label><br>
-                                    <input type="checkbox" id="rate2" name="rate2" value="$50 - $100">
-                                    <label for="rate2">$50 - $100</label><br>
-                                    <input type="checkbox" id="rate3" name="rate3" value="$100 - $150">
-                                    <label for="rate3">$100 - $150</label><br>
-                                    <input type="checkbox" id="rate4" name="rate3" value="$150+">
-                                    <label for="rate4">$150+</label><br>
+                                    <div class="rates">
+                                        <div class="rate">Rate (per night)</div>
+
+                                        <input type="checkbox" id="rate1" name="rate1" value="$0 - $50">
+                                        <label for="rate1">$0 - $50</label><br>
+                                        <input type="checkbox" id="rate2" name="rate2" value="$50 - $100">
+                                        <label for="rate2">$50 - $100</label><br>
+                                        <input type="checkbox" id="rate3" name="rate3" value="$100 - $150">
+                                        <label for="rate3">$100 - $150</label><br>
+                                        <input type="checkbox" id="rate4" name="rate3" value="$150+">
+                                        <label for="rate4">$150+</label><br>
+                                    </div>
+
+                                    <div class="types">
+                                        <div class="type">Property Type</div>
+
+                                        <input type="checkbox" id="apartments" name="apartments" value="apartments">
+                                        <label for="apartments">Apartments</label><br>
+                                        <input type="checkbox" id="hotels" name="hotels" value="hotels">
+                                        <label for="hotels">Hotels</label><br>
+                                        <input type="checkbox" id="boats" name="boats" value="boats">
+                                        <label for="boats">Boats</label><br>
+                                        <input type="checkbox" id="villas" name="villas" value="villas">
+                                        <label for="villas">Villas</label><br>
+                                        <span class="show-all"><a href="#">SHOW ALL</a></span>
+                                    </div>
+
+                                    <div class="facilities">
+                                        <div class="facility">Property Facility</div>
+
+                                        <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                                        <label for="wifi">Wi-fi</label><br>
+                                        <input type="checkbox" id="parking" name="parking" value="parking">
+                                        <label for="parking">Free Parking</label><br>
+                                        <input type="checkbox" id="shuttle" name="boats" value="boats">
+                                        <label for="shuttle">Airport Shuttle</label><br>
+                                        <input type="checkbox" id="rooms" name="shuttle" value="shuttle">
+                                        <label for="rooms">Family Rooms</label>
+                                    </div>
+
                                 </div>
 
-                                <div class="types">
-                                    <div class="type">Property Type</div>
-                                
-                                    <input type="checkbox" id="apartments" name="apartments" value="apartments">
-                                    <label for="apartments">Apartments</label><br>
-                                    <input type="checkbox" id="hotels" name="hotels" value="hotels">
-                                    <label for="hotels">Hotels</label><br>
-                                    <input type="checkbox" id="boats" name="boats" value="boats">
-                                    <label for="boats">Boats</label><br>
-                                    <input type="checkbox" id="villas" name="villas" value="villas">
-                                    <label for="villas">Villas</label><br>
-                                    <span class="show-all"><a href="#">SHOW ALL</a></span>
-                                </div>
+                                <button class="search-btn">PESQUISAR</button>
 
-                                <div class="facilities">
-                                    <div class="facility">Property Facility</div>
-                                
-                                    <input type="checkbox" id="wifi" name="wifi" value="wifi">
-                                    <label for="wifi">Wi-fi</label><br>
-                                    <input type="checkbox" id="parking" name="parking" value="parking">
-                                    <label for="parking">Free Parking</label><br>
-                                    <input type="checkbox" id="shuttle" name="boats" value="boats">
-                                    <label for="shuttle">Airport Shuttle</label><br>
-                                    <input type="checkbox" id="rooms" name="shuttle" value="shuttle">
-                                    <label for="rooms">Family Rooms</label>
-                                </div>
+                            </form>
 
-                            </div>
+                        </div>
+                        <!-- End Search -->
 
-                            <button class="search-btn">PESQUISAR</button>
-
-                          </form> 
-
-                    </div>
-                    <!-- End Search -->
-
-                    <img id="expandSearch" class="mbl-search-arrow" src="img/mbl-src-arrow.png" alt="">
+                        <img id="expandSearch" class="mbl-search-arrow" src="img/mbl-src-arrow.png" alt="">
 
                     </div>
                     <!-- End Advanced Search Mobile -->
@@ -264,15 +264,15 @@
                                 <div class="mySlides1 fade">
                                     <img src="img/slider2.jpg" style="width:100%">
                                 </div>
-                
+
                                 <div class="mySlides1 fade">
                                     <img src="img/slider3.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides1 fade">
                                     <img src="img/slider1.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <a class="prev" onclick="plusSlides(-1, 0)"><img src="img/arrow-left.png" alt=""></a>
                                 <a class="next" onclick="plusSlides(1, 0)"><img src="img/arrow-right.png" alt=""></a>
                             </div>
@@ -298,50 +298,61 @@
                             </div>
 
                             <div class="item-reviews">
-                                <span class="fa fa-star"></span>
+                                <img class="star" src="img/star-blue.png" alt="">
                                 <span class="rating">9,5</span>
-                                <span class="fa fa-heart"></span>
-                                <h3>TURNOS</h3>
-                                <span class="manha">Manhã</span>
-                                <span class="tarde">Tarde</span>
-                                <span class="noite">Noite</span>
-                                <br>
-                                <img src="img/circle-blue.png" alt="">
-                                <img src="img/circle-blue.png" alt="">
-                                <img src="img/circle-ash.png" alt="">
-                                <br>
+                                <img class="love" src="img/love-ash.png" alt="">
+
+                                <div class="shifts">
+                                    <h3>TURNOS</h3>
+                                    <div class="all-shifts">
+                                        <div class="morning">
+                                            <div class="manha">Manhã</div>
+                                            <a href="#"><img src="img/circle-blue.png" alt=""></a>
+                                        </div>
+                                        <div class="evening">
+                                            <div class="tarde">Tarde</div>
+                                            <a href=""><img src="img/circle-blue.png" alt=""></a>
+                                        </div>
+                                        <div class="night">
+                                            <div class="noite">Noite</div>
+                                            <a href=""><img src="img/circle-ash.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <button class="budget">RECEBER ORÇAMENTO</button>
-                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt=""> RESERVE GRÁTIS*</button>
+                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt="">
+                                    RESERVE GRÁTIS*</button>
                             </div>
-    
+
                         </div>
                     </div>
                     <!-- End Content Item 1 -->
 
                     <!-- Start Content Item 2 -->
                     <div class="content-item item2">
-                            
+
                         <div class="content-slider">
                             <img class="saver" src="img/saver-50.png" alt="">
-                            
+
                             <div class="slideshow-container slide">
 
                                 <div class="mySlides2 fade">
                                     <img src="img/slider1.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides2 fade">
                                     <img src="img/slider2.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides2 fade">
                                     <img src="img/slider3.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <a class="prev" onclick="plusSlides(-1, 1)"><img src="img/arrow-left.png" alt=""></a>
                                 <a class="next" onclick="plusSlides(1, 1)"><img src="img/arrow-right.png" alt=""></a>
                             </div>
-                            
+
                         </div>
 
                         <div class="content-excerpt">
@@ -363,28 +374,44 @@
                             </div>
 
                             <div class="item-reviews">
-                                <span class="fa fa-star"></span>
+                                <img class="star" src="img/star-blue.png" alt="">
                                 <span class="rating">9,2</span>
-                                <span class="fa fa-heart"></span>
-                                <h3>TURNOS</h3>
-                                <span class="manha">Manhã</span>
-                                <span class="tarde">Tarde</span>
-                                <span class="noite">Noite</span><br>
-                                <img src="img/circle-blue.png" alt="">
-                                <img src="img/circle-ash.png" alt="">
-                                <br>
+                                <img class="love" src="img/love-ash.png" alt="">
+
+                                <div class="shifts">
+                                    <h3>TURNOS</h3>
+                                    <div class="all-shifts">
+                                        <div class="morning">
+                                            <div class="manha">Manhã</div>
+                                            <a href="#"><img src="img/circle-blue.png" alt=""></a>
+                                        </div>
+                                        <div class="evening">
+                                            <div class="tarde">Tarde</div>
+                                            <a href=""><img src="img/circle-ash.png" alt=""></a>
+                                        </div>
+                                        <div class="night">
+                                            <!--<div class="noite">Noite</div>
+                                            <a href=""><img src="img/circle-ash.png" alt=""></a> 
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <button class="budget">RECEBER ORÇAMENTO</button>
-                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt=""> RESERVE GRÁTIS*</button>
+                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt="">
+                                    RESERVE GRÁTIS*</button>
                             </div>
-    
+
                         </div>
                     </div>
                     <!-- End Content Item 2 -->
 
                     <!-- Star Favorites Mobile -->
                     <div class="mbl-favorites">
-                        <a href="#"><img class="mbl-love-fav" src="img/love-red.png" alt=""></a><span class="favorite-txt">FAVORITOS</span>
-                        <a href="#"><img class="mbl-trash" src="img/trash.png" alt=""></a><span class="trash-txt">EXCLUIR</span>
+                        <a href="#"><img class="mbl-love-fav" src="img/love-red.png" alt=""></a><span
+                            class="favorite-txt">FAVORITOS</span>
+                        <a href="#"><img class="mbl-trash" src="img/trash.png" alt=""></a><span
+                            class="trash-txt">EXCLUIR</span>
 
                         <div class="favorite-items">
                             <div class="fav-item item1">
@@ -408,17 +435,17 @@
 
                     <!-- Star Content Item 3  -->
                     <div class="content-item item3">
-                        
+
                         <div class="content-slider">
                             <div class="slideshow-container slide">
                                 <div class="mySlides3 fade">
                                     <img src="img/slider3.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides3 fade">
                                     <img src="img/slider2.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides3 fade">
                                     <img src="img/slider1.jpg" style="width:100%">
                                 </div>
@@ -447,21 +474,33 @@
                             </div>
 
                             <div class="item-reviews">
-                                <span class="fa fa-star"></span>
+                                <img class="star" src="img/star-blue.png" alt="">
                                 <span class="rating">9,5</span>
-                                <span class="fa fa-heart"></span>
-                                <h3>TURNOS</h3>
-                                <span class="manha">Manhã</span>
-                                <span class="tarde">Tarde</span>
-                                <span class="noite">Noite</span><br>
-                                <img src="img/circle-blank.png" alt="">
-                                <img src="img/circle-ash.png" alt="">
-                                <img src="img/circle-blue.png" alt="">
-                                <br>
+                                <img class="love" src="img/love-ash.png" alt="">
+
+                                <div class="shifts">
+                                    <h3>TURNOS</h3>
+                                    <div class="all-shifts">
+                                        <div class="morning">
+                                            <!-- <div class="manha">Manhã</div>
+                                            <a href="#"><img src="img/circle-blue.png" alt=""></a>-->
+                                        </div>
+                                        <div class="evening">
+                                            <div class="tarde">Tarde</div>
+                                            <a href=""><img src="img/circle-ash.png" alt=""></a>
+                                        </div>
+                                        <div class="night">
+                                            <div class="noite">Noite</div>
+                                            <a href=""><img src="img/circle-blue.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <button class="budget">RECEBER ORÇAMENTO</button>
-                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt=""> RESERVE GRÁTIS*</button>
+                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt="">
+                                    RESERVE GRÁTIS*</button>
                             </div>
-    
+
                         </div>
                     </div>
                     <!-- End Content Item 3 -->
@@ -474,25 +513,25 @@
 
                         <div class="content-slider">
                             <img class="saver" src="img/saver-30.png" alt="">
-                
+
                             <div class="slideshow-container slide">
                                 <div class="mySlides4 fade">
                                     <img src="img/slider1.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides4 fade">
                                     <img src="img/slider2.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <div class="mySlides4 fade">
                                     <img src="img/slider3.jpg" style="width:100%">
                                 </div>
-                                
+
                                 <a class="prev" onclick="plusSlides(-1, 3)"><img src="img/arrow-left.png" alt=""></a>
                                 <a class="next" onclick="plusSlides(1, 3)"><img src="img/arrow-right.png" alt=""></a>
                             </div>
-                            
-                        </div>   
+
+                        </div>
 
                         <div class="content-excerpt">
 
@@ -513,24 +552,37 @@
                             </div>
 
                             <div class="item-reviews">
-                                <span class="fa fa-star"></span>
+                                <img class="star" src="img/star-blue.png" alt="">
                                 <span class="rating">9,2</span>
-                                <span class="fa fa-heart"></span>
-                                <h3>TURNOS</h3>
-                                <span class="manha">Manhã</span>
-                                <span class="tarde">Tarde</span>
-                                <span class="noite">Noite</span> <br>
-                                <img src="img/circle-blue.png" alt="">
-                                <img src="img/circle-ash.png" alt="">
-                                <br>
+                                <img class="love" src="img/love-ash.png" alt="">
+
+                                <div class="shifts">
+                                    <h3>TURNOS</h3>
+                                    <div class="all-shifts">
+                                        <div class="morning">
+                                            <div class="manha">Manhã</div>
+                                            <a href="#"><img src="img/circle-blue.png" alt=""></a>
+                                        </div>
+                                        <div class="evening">
+                                            <div class="tarde">Tarde</div>
+                                            <a href=""><img src="img/circle-ash.png" alt=""></a>
+                                        </div>
+                                        <div class="night">
+                                            <!-- <div class="noite">Noite</div>
+                                            <a href=""><img src="img/circle-blue.png" alt=""></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <button class="budget">RECEBER ORÇAMENTO</button>
-                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt=""> RESERVE GRÁTIS*</button>
+                                <button class="booking"> <img class="booking-arrow" src="img/booking-arrow.png" alt="">
+                                    RESERVE GRÁTIS*</button>
                             </div>
-    
+
                         </div>
                     </div>
                     <!-- End Content Item 4  -->
-                    
+
 
                     <!-- Start Promo Mobile-->
                     <div class="mbl-promo">
@@ -564,8 +616,10 @@
 
                 <!-- Star Favorites Right Space -->
                 <div class="right-favorites">
-                    <a href="#"><img class="right-love" src="img/love-red.png" alt=""></a><span class="favorite-txt">FAVORITOS</span>
-                    <a href="#"><img class="right-trash" src="img/trash.png" alt=""></a><span class="trash-txt">EXCLUIR</span>
+                    <a href="#"><img class="right-love" src="img/love-red.png" alt=""></a><span
+                        class="favorite-txt">FAVORITOS</span>
+                    <a href="#"><img class="right-trash" src="img/trash.png" alt=""></a><span
+                        class="trash-txt">EXCLUIR</span>
 
                     <div class="favorite-items">
                         <div class="fav-item item1">
@@ -617,10 +671,9 @@
 
         </div>
         <!-- End Footer -->
-        
+
         <!-- Footer Palette -->
         <div class="palette"></div>
-        </div>
 
     </div>
 
