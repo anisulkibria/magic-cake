@@ -6,6 +6,7 @@ $(document).ready(function () {
         if (!expanded) {
             $(".content-home").addClass("left-out")
             $(".love-red").addClass("display-none")
+            $(".sidebar").addClass("display-none")
             $(".less-than").addClass("rotate")
             $(".right-space").addClass("right-wide")
             $(".content-item").addClass("content-item-left")
@@ -15,6 +16,7 @@ $(document).ready(function () {
         else {
             $(".content-home").removeClass("left-out")
             $(".love-red").removeClass("display-none")
+            $(".sidebar").removeClass("display-none")
             $(".less-than").removeClass("rotate")
             $(".right-space").removeClass("right-wide")
             $(".content-item").removeClass("content-item-left")

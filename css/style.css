@@ -226,7 +226,7 @@ Main Content
 
 .booking-arrow {
     height: 24px;
-    margin: -5px -28px;
+    margin: -5px -33px;
     position: absolute;
 }
 
@@ -1158,7 +1158,7 @@ html {
     color: #2C8480;
     font-family: miso-bold;
     font-size: 54px;
-    padding: 0 10px 0 30px;
+    padding: 0 10px 0 35px;
     vertical-align: bottom;
 }
 
@@ -1206,6 +1206,11 @@ html {
     display: block;
     margin: 40px 0 40px 40px;
     padding: 0 20px;
+}
+
+#details button.booking-free h5, 
+#details button.payment-now h5{
+    min-width: 165px;
 }
 
 #details .payment-method {
@@ -1264,10 +1269,11 @@ html {
     background: none;
     border-radius: 100px;
     overflow: hidden;
+    width: 100%;
 }
 
 #details button.budget img {
-    max-width: 220px;
+    max-width: 200px;
     width: 100%;
 }
 
@@ -1510,9 +1516,9 @@ Media Queries for Maximum Width: 1300px
 */
 @media (max-width: 1300px) {
     .item-details h2 a {
-        font-size: 30px;
+        font-size: 26px;
         min-width: auto;
-        padding: 10px 10px 5px;
+        padding: 10px;
     }
 
     .item-details h3 {
@@ -1525,7 +1531,7 @@ Media Queries for Maximum Width: 1300px
 
     .content-slider .slide img {
         max-height: 330px;
-        max-width: 350px;
+        max-width: 370px;
     }
 
     .content-excerpt .price {
@@ -1658,6 +1664,15 @@ Media Queries for Maximum Width: 1200px
         padding: 0;
     }
 
+    #details button.booking-free , 
+    #details button.payment-now {
+        margin: 40px auto;
+        min-width: 90px;;
+    }
+
+    #details button.budget {
+        width: 90%;
+    }
     .search {
         margin: 18px;
     }
@@ -1667,6 +1682,25 @@ Media Queries for Maximum Width: 1200px
     }
 }
 
+/* 
+=========================================================================
+Media Queries for Maximum Width: 1100px
+=========================================================================
+*/
+@media (max-width: 1100px) {
+    .content-slider .slide img {
+        max-width: 300px;
+    }
+    .content-excerpt {
+        padding: 0 15px;
+    }
+    .item-details h2 a {
+        font-size: 24px;
+    }
+    .item-reviews h3 {
+        margin: 15px 0 5px 6px;
+    }
+}
 /* 
 =========================================================================
 Media Queries for Maximum Width: 1024px
@@ -1711,9 +1745,9 @@ Media Queries for Maximum Width: 1024px
     }
 
     .item-details h2 a {
-        font-size: 22px;
+        font-size: 21px;
         max-width: 100%;
-        padding: 10px 15px 5px 10px;
+        padding: 10px;
     }
 
     .item-details h3 {
@@ -1727,6 +1761,9 @@ Media Queries for Maximum Width: 1024px
         font-size: 14px;
     }
 
+    .content-slider .slide .fade img {
+        min-height: 300px;
+    }
     .content-excerpt .price img {
         max-height: 35px;
     }
@@ -1851,6 +1888,10 @@ Media Queries for Maximum Width: 1023px
         max-width: 100%;
     }
 
+    .content-excerpt {
+        padding: 15px;
+    } 
+
     #details .features {
         display: block;
     }
@@ -1958,13 +1999,13 @@ Media Queries for Maximum Width: 980px
     }
 
     .content-slider .slide .fade img {
-        max-height: 320px;
+        max-height: 350px;
     }
 
     .item-details h2 a {
         font-size: 18px;
         max-width: 100%;
-        padding: 10px 15px 5px 10px;
+        padding: 10px;
     }
 
     .item-details h3 {
@@ -2111,6 +2152,43 @@ Media Queries for Maximum Width: 980px
     .mbl-favorites-expanded .favorite-items {
         display: block;
     }
+}
+
+/* 
+=========================================================================
+Media Queries for Maximum Width: 940px
+=========================================================================
+*/
+@media (max-width: 940px) {
+
+    #details .content {
+        display: block;
+    }
+
+    #details .sidebar {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #details .sidebar .blank-space {
+        display: none;
+    }
+
+    #details .review, 
+    #details .favorite {
+        font-size: 26px;
+    }
+
+    #details .review .star {
+        padding-bottom: 10px;
+        width: 30px;
+    }
+
+    #details .favorite img {
+        padding-bottom: 10px;
+        width: 26px;
+    }
+
 }
 
 /* 
@@ -2287,7 +2365,7 @@ Media Queries for Maximum Width: 767px
     }
 
     .item-details h2 a {
-        min-width: 140px;
+        min-width: 130px;
     }
 
     .mbl-dicas img {
@@ -2340,6 +2418,8 @@ Media Queries for Maximum Width: 767px
 
     .all-features {
         grid-column: 1 / 13;
+        margin: 0 auto;
+        width: 95%;
     }
 
     .themes {
@@ -2373,7 +2453,8 @@ Media Queries for Maximum Width: 767px
         display: grid;
     }
 
-    #details button.booking-free #details button.payment-now {
+    #details button.booking-free, 
+    #details button.payment-now {
         margin: 20px auto;
     }
 
@@ -2463,8 +2544,52 @@ Media Queries for Maximum Width: 767px
     }
 
     .purchase-extra {
+        font-size: 28px;
         margin: 20px 0 0;
     }
+
+    .peoples img {
+        width: 34px;
+    }
+
+    .people-count {
+        font-size: 30px;
+    }
+
+    #details .price {
+        margin: 15px 0;
+    }
+
+    #details .price img {
+        width: 18px;
+    }
+
+    #details button.booking-free,
+    #details button.payment-now
+    {
+        margin:20px auto;
+    }
+
+    #details .payment-method {
+        margin: 20px auto;
+    }
+
+    .price-count {
+        font-size: 48px;
+    }
+
+    .purchase-extra img {
+        width: 30px;
+    }
+
+    .extra img {
+        width: 36px;
+    }
+
+    .extra {
+        font-size: 18px;
+    }
+
 }
 
 /* 
